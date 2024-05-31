@@ -1,43 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <meta name="title" content="Kasa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Kasa</title>
+    <link rel="stylesheet" href="../src/styles/index.css">
   </head>
+
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!-- <div id="root"></div> -->
+    <header>
+    <div class="top-header">
+      <img class="logo" src="../src/assets/logo.png" alt="Logo Kasa">
+      <div class="btn-nav">
+        <nav><ul>
+          <a href="#"><li>Accueil</li></a>
+          <a href="#"><li>A Propos</li></a>
+          </ul></nav>
+      </div>
+    </div>
+    </header>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <main>
+      <div class="banniere">
+        <h1 class="textIntro">Chez vous, partout et ailleurs</h1>
+      </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+      <div class="hebergements">
+        <section class="groupe-chambres">
+          <a href="#">
+            <article class="cartes">
+              <h3 class="carte-titre">Titre de la location</h3>
+            </article>
+          </a>
+          <a href="#">
+            <article class="cartes">
+              <h3 class="carte-titre">Titre de la location</h3>
+            </article>
+          </a>
+          <a href="#">
+            <article class="cartes">
+              <h3 class="carte-titre">Titre de la location</h3>
+            </article>
+          </a>
+          <a href="#">
+            <article class="cartes">
+              <div class="carte-contenu">
+                <h3 class="carte-titre">Titre de la location</h3>
+              </div>
+            </article>
+          </a>
+          <a href="#">
+            <article class="cartes">
+              <h3 class="carte-titre">Titre de la location</h3>
+            </article>
+          </a>
+          <a href="#">
+            <article class="cartes">
+              <div class="carte-contenu">
+                <h3 class="carte-titre">Titre de la location</h3>
+              </div>
+            </article>
+          </a>
+        </section> 
+      </div>
+    </main>
+
+
+
+
+    <footer>
+      <div id="blackBar">
+          <div class="logoFooter">
+            <img src="../src/assets/logo_whtie.png" alt="Logo Kasa">
+          </div>
+          <p class="footerItem">© 2020 Kasa. All rights reserved</p>
+      </div>
+   </footer>
   </body>
 </html>
