@@ -1,15 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from './pages/Home/'
- 
-ReactDOM.createRoot(
-    <React.StrictMode>
-        <Router>
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home/home';
+import './styles/index.css';
+
+const App = () => {
+    return (
+        <div>
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path='/' element= {<Home/>}> 
+                </Route>
             </Routes>
-        </Router>
-    </React.StrictMode>,
-document.getElementById('root')
-)
+        </div>
+    );
+}
+export default App

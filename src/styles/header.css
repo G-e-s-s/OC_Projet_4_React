@@ -1,0 +1,28 @@
+/* HEADER */
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	padding-inline: 100px;
+	padding-block: 30px;
+	align-items: center;
+}
+.navbar__logo {
+  height: 68px;
+}
+.btn-nav ul {
+	display: flex;
+	list-style-type: none;
+	font-size: 24px;
+	margin: 0;
+}
+.btn-nav li {
+	padding-inline: 10px;
+}
+.btn-nav a {
+  text-decoration: none;
+  color: black
+}
+.btn-nav a :hover {
+  border-bottom: black 2px solid;
+  color: black
+}
