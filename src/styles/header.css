@@ -3,7 +3,7 @@
 	display: flex;
 	justify-content: space-between;
 	padding-inline: 100px;
-	padding-block: 30px;
+	padding-block: 50px;
 	align-items: center;
 }
 .navbar__logo {
@@ -12,15 +12,14 @@
 .btn-nav ul {
 	display: flex;
 	list-style-type: none;
-	font-size: 24px;
 	margin: 0;
-}
-.btn-nav li {
-	padding-inline: 10px;
+	font-weight: 500;
 }
 .btn-nav a {
   text-decoration: none;
-  color: black
+  color: black;
+  font-size: 24px;
+  padding-left: 50px;
 }
 .btn-nav a :hover {
   border-bottom: black 2px solid;

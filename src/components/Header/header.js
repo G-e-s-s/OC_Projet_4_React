@@ -4,17 +4,17 @@ import '../../styles/header.css';
 import logo from './../../assets/logo.png'
  
 ReactDOM.createRoot(document.getElementById('root'));
-function Header() {
-    return (
-        <div class="navbar">
-        <img class="navbar__logo" src={logo} alt='Logo Kasa'></img>
-            <div class="btn-nav">
-                <nav><ul>
-                    <li>Accueil</li>
-                    <li>A Propos</li>
-                </ul></nav>
+    function Header() {
+        return (
+            <div className="navbar">
+            <img className="navbar__logo" src={logo} alt='Logo Kasa'></img>
+                <div className="btn-nav">
+                    <nav><ul>
+                        <a href='../pages/Home/home'><li>Accueil</li></a>
+                        <a href='../pages/Home/home'><li>A Propos</li></a>
+                    </ul></nav>
+                </div>
             </div>
-        </div>
-    )
-}
+        )
+    }
 export default Header

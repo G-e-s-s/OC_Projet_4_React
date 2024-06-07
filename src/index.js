@@ -9,5 +9,3 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
       <App />
     </BrowserRouter>
   );
-
-// reportWebVitals();

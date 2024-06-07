@@ -1,0 +1,72 @@
+body {
+	margin: 0;
+  max-width: 1440px;
+}
+* {
+	font-family: 'Montserrat';
+	font-style: normal;
+}
+
+/* MAIN */
+/* Bannière */
+.banniere {
+  width: 1240px;
+  height: 223px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+.imgBanniere {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+  border-radius: 25px;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.20);
+}
+.textIntro {
+  color: white;
+  text-align: center;
+  padding-top: 70px;
+  position: relative;
+  top: -250px;
+  font-weight: 700;
+  font-size: 48px;
+  font-family: 'Montserrat';
+}
+/* Locations */
+.hebergements {
+  width: 1240px;
+  background-color: rgba(246, 246, 246, 1);
+  border-radius: 25px;
+  margin-left: 100px;
+} 
+.groupe-chambres {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px 50px 20px 50px;
+}
+.cartes {
+  background-image: linear-gradient(to bottom, #ff6060, #b34e4e );
+  display: flex;
+  flex-direction: column-reverse;
+  width: 340px;
+  height: 340px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+.carte-titre {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  width: 100px;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Media queries */
+@media all and (max-width: 1200px) {
+ 
+
+}
