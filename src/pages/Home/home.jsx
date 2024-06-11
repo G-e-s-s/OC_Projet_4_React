@@ -2,7 +2,7 @@ import React from 'react';
 // import Headernav from '../../components/Header/header';
 // import Footer from '../../components/Footer/footer';
 import '../../styles/home.css';
-import ImgBanniere from '../../assets/ImgHome.jpg'
+import ImgBanniere from '../../assets/ImgHome.jpg';
 
 const Home = () => {
   return (

@@ -1,20 +1,36 @@
 /* FOOTER */
 #blackBar {
 	background-color: black;
-	height: 209px;
   margin-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 .logoFooter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-top: 66px;
   height: 39px;
 }
 .footerItem {
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
+  margin: 50px 0 50px 0;
+}
+
+@media all and (max-width: 1440) {
+  #blackBar {
+    width: 100%;
+  }
+  
+}
+
+@media all and (max-width: 1000px) {
+  #blackBar {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 650px) {
+  #blackBar {
+    width: 100%;
+  }
 }
