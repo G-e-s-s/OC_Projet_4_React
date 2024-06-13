@@ -25,21 +25,16 @@ body {
   margin: 50px 0 50px 0;
 }
 
-@media all and (max-width: 1440) {
-  #blackBar {
-    width: 100%;
-  }
-  
-}
-
 @media all and (max-width: 1000px) {
-  #blackBar {
-    width: 100%;
+  .footerItem {
+    font-size: 14px;
+    font-weight: 600;
   }
 }
 
 @media all and (max-width: 650px) {
-  #blackBar {
-    width: 100%;
+  .footerItem {
+    font-weight: 500;
+    font-size: 12px;
   }
 }

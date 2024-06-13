@@ -1,9 +1,7 @@
 /* BANNIERE */
 .banniere {
-    width: 1240px;
     height: 223px;
-    margin-left: 100px;
-    margin-bottom: 50px;
+    margin: 0 7% 3% 7%;
 }
 .imgBanniere {
     object-fit: cover;
@@ -13,45 +11,47 @@
     border-radius: 25px;
 }
 
-/* COLLAPSE */
-[data-toggle="collapse"] .fa:before {  
-    content: "\f078";
-    color: white;
-}
-  
-[data-toggle="collapse"].collapsed .fa:before {
-    content: "\f077";
-    color: white;
-}
-.fa{
-    color: white;
-}
-.card-header button {
-    border: none;
-    background-color: #ff6060;
-}
-.mb-0{
-    color: white;
-    font-size: 24px;
-    font-weight: 700;
-    padding: 10px 20px 10px 15px;
-}
-.card-header {
-    background-color: #ff6060;
-    height: 54px;
-    width: 1023px;
-    border: none;
-    border-radius: 5px;
-    margin: 20px 14% 0 14%;
-}
-.card-body {
-    width: 1005px;
-    display: none;
-    padding: 10px 0 10px 18px;
-    overflow: hidden;
+/* COLLAPSE*/
+.collapsible .card-content {
+    padding: 10px 18px 10px 18px;
     background-color: #f1f1f185;
     margin: 0 15% 10px 14%;
     font-size: 18px;
     border-radius: 5px;
 }
-  
+.collapsible .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6060;
+    border: none;
+    border-radius: 5px;
+    margin: 25px 15% 0 14%;
+    cursor: pointer;
+}
+.card-header {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 10px 20px 10px 15px;
+}
+
+
+@media all and (max-width: 1000px) {
+	.card-header {
+		font-size: 18px;
+	}
+	.collapsible .card-content {
+		font-size: 14px;
+	}
+}
+@media all and (max-width: 650px) {
+	.card-header {
+		font-size: 13px;
+        font-weight: 700;
+	}
+	.collapsible .card-content {
+		font-size: 12px;
+        font-weight: 500;
+	}
+}
