@@ -19,20 +19,8 @@
 .return {
     font-size: 18px;
     font-weight: 500;
+    margin-bottom: 30px;
 }
-
-/* @media all and (max-width: 1440) {
-    .Error{
-        width: 100%;
-    }
-    .imgError{
-        width: 50%;
-        padding: 40px;
-    }
-    .return{
-        width: 50%;
-    }
-} */
 
 @media all and (max-width: 1000px) {
     .Error{
@@ -44,14 +32,9 @@
     .textError{
         font-size: 18px;
         padding: 30px;
+        text-align: center;
     }
     .return{
         font-size: 14px;
-    }
-}
-  
-@media all and (max-width: 650px) {
-    .imgError{
-        width: 30%;
     }
 }
