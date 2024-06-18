@@ -1,13 +1,14 @@
 /* MAIN */
 /* Bannière */
 .banniere {
-  height: 223px;
+  height: 100%;
   margin: 0 7% 3% 7%;
 }
 .ImgBanniereHome {
   object-fit: cover;
-  width: 100%;
+  width: 97%;
   height: 100%;
+  margin-left: 1.5%;
   filter: brightness(40%);
   border-radius: 25px;
   box-shadow: 0px 4px rgba(0, 0, 0, 0.20);
@@ -24,10 +25,10 @@
 }
 /* Locations */
 .hebergements {
-  width: 86%;
+  width: 83.5%;
   background-color: rgba(246, 246, 246, 1);
   border-radius: 25px;
-  margin-left: 100px;
+  margin: 0 120px;
 } 
 .groupe-chambres {
   display: flex;
@@ -57,23 +58,37 @@
   .hebergements{
     margin-left: 7%;
   }
-	.textIntro {
-    padding: 60px 20px;
-	}
 	.groupe-chambres {
     padding: 0;
     background-color: white;
-	}
+	}  
+  .cartes {
+    width: 350px;
+    height: 255px;
+  }
 }
 @media all and (max-width: 650px) {
-	.textIntro {
-    padding: 50px 20px;
+  .banniere {
+    width: 80%;
+    height: 111px;
+    margin-left: 52px;
+  }
+  .ImgBanniereHome {
+    height: 111px;
+    margin: 0;
+    border-radius: 10px;
+  }
+  .textIntro {
+    text-align: left;
+    margin: 93px 100px 0 0;
 		font-size: 24px;
 	}
   .hebergements {
-    margin-left: 13%;
+    margin: 20px 0 0 52px;
   }
   .groupe-chambres {
     flex-direction: column;
   }
+
+  
 }

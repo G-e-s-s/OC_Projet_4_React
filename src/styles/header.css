@@ -13,6 +13,7 @@ body {
 	justify-content: space-between;
 	padding: 3% 7%;
 	align-items: center;
+	margin: 20px;
 }
 .btn-nav ul {
 	display: flex;

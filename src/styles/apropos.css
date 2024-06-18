@@ -5,8 +5,9 @@
 }
 .imgBanniere {
     object-fit: cover;
-    width: 100%;
+    width: 97%;
     height: 100%;
+    margin-left: 1.5%;
     filter: brightness(70%);
     border-radius: 25px;
 }
@@ -46,6 +47,16 @@
 	}
 }
 @media all and (max-width: 650px) {
+    .banniere {
+        width: 80%;
+        height: 111px;
+        margin-left: 52px;
+    }
+    .imgBanniere {
+        height: 111px;
+        margin: 0;
+        border-radius: 10px;
+    }
 	.card-header {
 		font-size: 13px;
         font-weight: 700;
