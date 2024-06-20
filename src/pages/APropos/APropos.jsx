@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/apropos.css';
+import '../../styles/apropos.scss';
 import ImgBanniere from '../../assets/ImgAPropos.png';
 import Collapse from '../../components/Collapse/collapse';
 import Banniere from '../../components/Bannière/banniere';

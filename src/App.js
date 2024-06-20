@@ -11,7 +11,7 @@ const App = () => {
         <div>
             <Headernav/>
             <Routes>
-                <Route path='/home' element= {<Home/>}> </Route>
+                <Route path='/' element= {<Home/>}> </Route>
                 <Route path='/apropos' element= {<APropos/>}> </Route>
                 <Route path='/logements' element= {<Logements/>}> </Route>
                 <Route path='*' element= {<Error/>}> </Route>

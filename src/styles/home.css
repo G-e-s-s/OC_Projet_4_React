@@ -1,5 +1,9 @@
 /* MAIN */
 /* Bannière */
+main {
+  max-width: 1440px;
+  margin: auto;
+}
 .banniere {
   height: 100%;
   margin: 0 7% 3% 7%;
@@ -25,7 +29,6 @@
 }
 /* Locations */
 .hebergements {
-  width: 83.5%;
   background-color: rgba(246, 246, 246, 1);
   border-radius: 25px;
   margin: 0 120px;
@@ -36,6 +39,9 @@
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 50px 50px 20px 50px;
+}
+.groupe-chambres a {
+  text-decoration: none;
 }
 .cartes {
   background-image: linear-gradient(to bottom, #ff6060, #b34e4e );

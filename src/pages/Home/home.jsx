@@ -11,15 +11,15 @@ const Home = () => {
         <Banniere className="ImgBanniereHome" img={ImgBanniereHome} text={"Chez vous, parout et ailleurs"}></Banniere>
         <div className="hebergements">
           <section className="groupe-chambres">
-            <Cartes cardLink={"../Logements/logements"} title={"Titre de la location"}></Cartes>
-            <Cartes cardLink={"../Logements/logements"} title={"Titre de la location"}></Cartes>
-            <Cartes cardLink={"../Logements/logements"} title={"Titre de la location"}></Cartes>
-            <Cartes cardLink={"../Logements/logements"} title={"Titre de la location"}></Cartes>
-            <Cartes cardLink={"../Logements/logements"} title={"Titre de la location"}></Cartes>
-            <Cartes cardLink={"../Logements/logements"} title={"Titre de la location"}></Cartes>
-            <Cartes cardLink={"../Logements/logements"} title={"Titre de la location"}></Cartes>
-            <Cartes cardLink={"../Logements/logements"} title={"Titre de la location"}></Cartes>
-            <Cartes cardLink={"../Logements/logements"} title={"Titre de la location"}></Cartes>
+            <Cartes cardLink={"../Logements"} title={"Titre de la location"}></Cartes>
+            <Cartes cardLink={"../Logements"} title={"Titre de la location"}></Cartes>
+            <Cartes cardLink={"../Logements"} title={"Titre de la location"}></Cartes>
+            <Cartes cardLink={"../Logements"} title={"Titre de la location"}></Cartes>
+            <Cartes cardLink={"../Logements"} title={"Titre de la location"}></Cartes>
+            <Cartes cardLink={"../Logements"} title={"Titre de la location"}></Cartes>
+            <Cartes cardLink={"../Logements"} title={"Titre de la location"}></Cartes>
+            <Cartes cardLink={"../Logements"} title={"Titre de la location"}></Cartes>
+            <Cartes cardLink={"../Logements"} title={"Titre de la location"}></Cartes>
           </section> 
         </div>
       </main>

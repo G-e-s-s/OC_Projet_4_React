@@ -1,4 +1,8 @@
 /* 404 */
+main {
+    max-width: 1440px;
+    margin: auto;
+  }
 .Error {
     display: flex;
     align-items: center;

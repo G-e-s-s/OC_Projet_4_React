@@ -1,0 +1,80 @@
+$color_1: #ffffff;
+$background-color_1: #f1f1f185;
+$background-color_2: #ff6060;
+
+/* BANNIERE */
+/* COLLAPSE*/
+main {
+	max-width: 1440px;
+	margin: auto;
+}
+.banniere {
+	height: 223px;
+	margin: 0 7% 3% 7%;
+}
+.imgBanniere {
+	object-fit: cover;
+	width: 97%;
+	height: 100%;
+	margin-left: 1.5%;
+	filter: brightness(70%);
+	border-radius: 25px;
+}
+.collapsible {
+	.card-content {
+		padding: 10px 18px 10px 18px;
+		background-color: $background-color_1;
+		margin: 0 15% 10px 14%;
+		font-size: 18px;
+		border-radius: 5px;
+	}
+	.card-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: $background-color_2;
+		border: none;
+		border-radius: 5px;
+		margin: 25px 15% 0 14%;
+		
+	}
+}
+.card-header {
+	color: $color_1;
+	font-size: 24px;
+	font-weight: 700;
+	padding: 10px 20px 10px 15px;
+}
+
+@media all and (max-width: 1000px) {
+	.card-header {
+		font-size: 18px;
+	}
+	.collapsible {
+		.card-content {
+			font-size: 14px;
+		}
+	}
+}
+@media all and (max-width: 650px) {
+	.banniere {
+		width: 80%;
+		height: 111px;
+		margin-left: 52px;
+	}
+	.imgBanniere {
+		height: 111px;
+		margin: 0;
+		border-radius: 10px;
+	}
+	.card-header {
+		font-size: 13px;
+		font-weight: 700;
+	}
+	.collapsible {
+		.card-content {
+			font-size: 12px;
+			font-weight: 500;
+		}
+	}
+}
