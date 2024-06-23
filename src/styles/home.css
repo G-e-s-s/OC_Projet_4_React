@@ -36,23 +36,28 @@ main {
 .groupe-chambres {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
-  padding: 50px 50px 20px 50px;
+  padding: 50px 0px 20px 50px;
 }
 .groupe-chambres a {
   text-decoration: none;
 }
 .cartes {
-  background-image: linear-gradient(to bottom, #ff6060, #b34e4e );
   display: flex;
   flex-direction: column-reverse;
   width: 340px;
   height: 340px;
-  margin-bottom: 30px;
+  margin: 0 40px 30px 0;
+}
+.img {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
   border-radius: 10px;
 }
 .carte-titre {
+  position: relative;
   font-size: 18px;
   font-weight: 700;
   color: white;
@@ -95,6 +100,4 @@ main {
   .groupe-chambres {
     flex-direction: column;
   }
-
-  
 }

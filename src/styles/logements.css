@@ -1,4 +1,29 @@
 main {
-    max-width: 1440px;
-    margin: auto;
-  }
+  max-width: 1440px;
+  margin: auto;
+}
+.react-slideshow-container {
+  margin-left: 8%;
+  width: 84%;
+  object-fit: cover;
+}
+.react-slideshow-wrapper.slide {
+  border-radius: 15px;
+}
+.carousel {
+  display: flex;
+  align-items: flex-end;
+  height: 415px;
+}
+.imgCarousel {
+  width: 100%;
+  max-width: 1210px;
+  height: 415px;
+  object-fit: cover;
+  position: absolute;
+}
+.numImg {
+  position: relative;
+  margin: 0 0 30px 50%;
+  color: white;
+}
