@@ -10,7 +10,7 @@ function Collapse(props) {
     const rotate = rotateChevron ? "rotate(-180deg)" : "rotate(0)"
     
     return (
-        <div className="collapsible" onClick={handleRotate}>
+      <div className="collapsible" onClick={handleRotate}>
         <div className="card-header" {...getToggleProps()}>
           {props.title} <div style={{ transform: rotate, transition: "all 0.5s ease" }} ><FontAwesomeIcon icon={faChevronUp}/> </div>
         </div>

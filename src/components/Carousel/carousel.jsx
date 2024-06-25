@@ -17,10 +17,10 @@ const Carousel = (props) => {
   const imageCarousel = appart.pictures.map(
     (image, index) => {
         return (
-            <div key={image} className="carousel each-slide-effect" >
-                <img style={{resizeMode: 'cover'}} className="imgCarousel" src={image} alt="Logements"></img>
-                <span className="numImg"> {index+1}/{length}</span>
-            </div>
+          <div key={image} className="carousel each-slide-effect" >
+            <img style={{resizeMode: 'cover'}} className="imgCarousel" src={image} alt="Logements"></img>
+            <span className="numImg"> {index+1}/{length}</span>
+          </div>
         )
     }
   );
