@@ -18,11 +18,9 @@ main {
 	filter: brightness(70%);
 	border-radius: 25px;
 }
-// .collapsible{
-// 	width: 83.25%;
-// 	margin-left: 8.5%;
-// }
-.collapsible {
+.valeurs {
+	margin-left: -8.25%;
+	width: 117.5%;
 	.card-content {
 		padding: 10px 18px 10px 18px;
 		background-color: $background-color_1;
@@ -77,5 +75,17 @@ main {
 			font-size: 12px;
 			font-weight: 500;
 		}
+	}
+}
+@media all and (max-width: 1000px) {
+	.valeurs {
+		margin-left: -8%;
+		width: 130.5%;
+	}
+}
+@media all and (max-width: 650px) {
+	.valeurs {
+		margin-left: -4.25%;
+		width: 121.5%;
 	}
 }

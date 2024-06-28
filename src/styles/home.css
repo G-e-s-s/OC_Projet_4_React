@@ -72,10 +72,15 @@ main {
 	.groupe-chambres {
     padding: 0;
     background-color: white;
+    flex-direction: column;
 	}  
   .cartes {
     width: 350px;
-    height: 255px;
+  }
+  .img {
+    width: 84%;
+    margin-left: 1%;
+    object-fit: cover;
   }
 }
 @media all and (max-width: 650px) {
@@ -97,7 +102,9 @@ main {
   .hebergements {
     margin: 20px 0 0 52px;
   }
-  .groupe-chambres {
-    flex-direction: column;
+  .img {
+    width: 77%;
+    margin: 0;
+    object-fit: cover;
   }
 }

@@ -1,0 +1,218 @@
+$color_1: white;
+$color_2: #ffffff;
+$color_3: #ff6060;
+$color_4: #E3E3E3;
+$background-color_1: #f1f1f185;
+$background-color_2: #ff6060;
+
+main {
+	max-width: 1440px;
+	margin: auto;
+}
+.react-slideshow-container {
+	margin-left: 8%;
+	width: 84%;
+	object-fit: cover;
+}
+.react-slideshow-wrapper.slide {
+	border-radius: 15px;
+}
+.carousel {
+	display: flex;
+	align-items: flex-end;
+	height: 415px;
+}
+.imgCarousel {
+	width: 100%;
+	max-width: 1210px;
+	height: 415px;
+	object-fit: cover;
+	position: absolute;
+}
+.numImg {
+	position: relative;
+	margin: 0 0 30px 50%;
+	color: $color_1;
+}
+.details {
+	display: flex;
+	width: 84%;
+	margin-left: 8%;
+	gap: 4%;
+		ul {
+			margin: 0;
+			padding: 0;
+			width: 88.5%;
+		}
+  .collapsible {
+    width: 88.5%;
+    .card-content {
+      padding: 20px 18px;
+      background-color: $background-color_1;
+      font-size: 18px;
+      border-radius: 5px;
+      margin: 0;
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $background-color_2;
+      border: none;
+      border-radius: 5px;
+      margin: 25px 0 0 0;
+    }
+  }
+}
+.card-header {
+	color: $color_2;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 10px 20px 10px 15px;
+}
+.card-content li {
+  list-style: none;
+}
+.description {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 84%;
+	margin: 2% 0 0 8%;
+}
+.titreLogement {
+	h2 {
+		color: $color_3;
+		font-size: 36px;
+		font-weight: 500;
+		margin: 0 0 5px 0;
+	}
+	p {
+		font-size: 18px;
+		font-weight: 500;
+		margin: 0;
+	}
+}
+.tagLogement {
+	display: flex;
+}
+.tag {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $background-color_2;
+	border-radius: 10px;
+	font-weight: 700;
+	color: $color_1;
+	margin: 20px 10px 0 0;
+	padding: 5px 10px;
+}
+.Host {
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+}
+.profilHost {
+	display: flex;
+	margin: 10px 0 10px 10px;
+}
+.nameHost {
+	width: 83px;
+	margin-right: 20px;
+	color: $color_3;
+	text-align: right;
+	font-size: 18px;
+	font-weight: 500;
+}
+.imgHost {
+	width: 64px;
+	height: 64px;
+	border-radius: 50px;
+	object-fit: cover;
+}
+.fullStar {
+	color: $color_3;
+	height: 24px;
+	width: 24px;
+	margin-right: 10px;
+}
+.emptyStar {
+	color: $color_4;
+	height: 24px;
+	width: 24px;
+}
+
+@media all and (max-width: 1000px) {
+	.description {
+		flex-direction: column;
+	}
+	.Host {
+		align-items: flex-start;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+	.profilHost {
+		margin-bottom: 0;
+	}
+	.nameHost {
+		margin-bottom: 0;
+	}
+	.stars {
+		align-self: center;
+		margin-top: 20px;
+	}
+	.details {
+		flex-direction: column;
+		width: 95%;
+	}
+	.collapsible {
+		width: 90%;
+	}
+}
+@media all and (max-width: 650px) {
+	.carousel {
+		height: 255px;
+	}
+	.imgCarousel {
+		max-width: 487px;
+		height: 255px;
+	}
+	.numImg {
+		margin: 0 0 10px 45%;
+	}
+	.titreLogement {
+		h2 {
+			font-size: 18px;
+		}
+		p {
+			font-size: 14px;
+		}
+	}
+	.fullStar {
+		height: 13px;
+		width: 13px;
+	}
+	.emptyStar {
+		height: 13px;
+		width: 13px;
+	}
+	.nameHost {
+		font-size: 12px;
+		margin: 0 10px;
+	}
+	.card-header {
+		font-size: 13px;
+	}
+	.details {
+		.collapsible{
+			.card-content {
+				font-size: 12px;
+			}
+		}
+	}
+	.imgHost {
+		width: 32px;
+		height: 32px;
+		object-fit: cover;
+	}
+}

@@ -1,6 +1,5 @@
 import React from 'react';
 import appartements from "../../assets/logements.json";
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 
@@ -10,6 +9,8 @@ const DetailsLogements = (props) => {
           return appart.id === props.id;
         }
       )[0];
+    
+    //TAGS//
     const tagLogement = appart.tags.map(
         (tag) => {
             return( 
@@ -17,11 +18,14 @@ const DetailsLogements = (props) => {
             );
         }
     );
+
+    //STARS//
     const numberStars = parseInt(appart.rating);
     let stars = [];
     for (let i = 1; i<=5; i++){
         stars.push(<FontAwesomeIcon icon={faStar} className={numberStars >= i ? "fullStar" : "emptyStar"}/>)
     }
+
     return (
         <div className="description">
             <div className="titreLogement">

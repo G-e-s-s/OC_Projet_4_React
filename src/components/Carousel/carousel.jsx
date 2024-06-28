@@ -1,9 +1,8 @@
 import React from 'react';
-import "../../styles/logements.css"
+import "../../styles/logements.scss"
 import appartements from "../../assets/logements.json";
 import 'react-slideshow-image/dist/styles.css';
 import { Slide } from 'react-slideshow-image';
-
 
 const Carousel = (props) => {
   const appart = appartements.filter(
@@ -13,7 +12,8 @@ const Carousel = (props) => {
   )[0];
 
   const length = appart.pictures.length;
-  
+  if(length === 1);
+
   const imageCarousel = appart.pictures.map(
     (image, index) => {
         return (

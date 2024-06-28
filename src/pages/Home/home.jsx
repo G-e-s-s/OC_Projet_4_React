@@ -12,8 +12,8 @@ const Home = () => {
         <Banniere className="ImgBanniereHome" img={ImgBanniereHome} text={"Chez vous, parout et ailleurs"}></Banniere>
         <div className="hebergements">
           <section className="groupe-chambres">
-            {appartements.map(appart => <Cartes key={appart.id} cardLink={"../Logements" + appart.id} title={appart.title} img={appart.cover} id = {appart.id}></Cartes>)}
-          </section> 
+            {appartements.map(appart => <Cartes key={appart.id} cardLink={"../Logements/" + appart.id} title={appart.title} img={appart.cover} id={appart.id}></Cartes>)}
+          </section>
         </div>
       </main>
     </div>
