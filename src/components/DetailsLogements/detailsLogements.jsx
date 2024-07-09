@@ -12,9 +12,9 @@ const DetailsLogements = (props) => {
     
     //TAGS//
     const tagLogement = appart.tags.map(
-        (tag) => {
+        (tag,index) => {
             return( 
-                <div className="tag"><p>{tag}</p></div>
+                <div key={index} className="tag"><p>{tag}</p></div>
             );
         }
     );
@@ -23,7 +23,7 @@ const DetailsLogements = (props) => {
     const numberStars = parseInt(appart.rating);
     let stars = [];
     for (let i = 1; i<=5; i++){
-        stars.push(<FontAwesomeIcon icon={faStar} className={numberStars >= i ? "fullStar" : "emptyStar"}/>)
+        stars.push(<FontAwesomeIcon key={i} icon={faStar} className={numberStars >= i ? "fullStar" : "emptyStar"}/>)
     }
 
     return (

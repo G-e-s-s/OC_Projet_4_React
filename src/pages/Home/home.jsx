@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/home.css';
+import '../../styles/home.scss';
 import Banniere from '../../components/Bannière/banniere';
 import ImgBanniereHome from '../../assets/ImgHome.jpg';
 import Cartes from '../../components/Cartes/cartes';

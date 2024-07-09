@@ -1,0 +1,32 @@
+$color_1: white;
+$background-color_1: black;
+
+/* FOOTER */
+#blackBar {
+	background-color: $background-color_1;
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+.logoFooter {
+	padding-top: 66px;
+	height: 39px;
+}
+.footerItem {
+	color: $color_1;
+	margin: 50px 0 50px 0;
+}
+@media all and (max-width: 1000px) {
+	.footerItem {
+		font-size: 14px;
+		font-weight: 600;
+	}
+}
+@media all and (max-width: 650px) {
+	.footerItem {
+		font-weight: 500;
+		font-size: 12px;
+	}
+}
