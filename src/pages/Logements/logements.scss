@@ -29,7 +29,9 @@ main {
 	height: 102.5%;
 	object-fit: cover;
 	border-radius: 25px;
-
+}
+.imgCarousel:hover {
+	opacity: 1;
 }
 .chevronLeft {
 	position: relative;

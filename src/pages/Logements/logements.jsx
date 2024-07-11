@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react';
-import { useNavigate } from "react-router-dom";
-import "../../styles/logements.scss";
+import { useNavigate, useParams } from "react-router-dom";
+import "./logements.scss";
 import Carousel from '../../components/Carousel/carousel';
 import Collapse from '../../components/Collapse/collapse';
 import 'react-slideshow-image/dist/styles.css';
 import DetailsLogements from '../../components/DetailsLogements/detailsLogements';
 import appartements from "../../assets/logements.json";
-import { useParams } from 'react-router-dom';
 
 const Logements = () => {
   const navigate = useNavigate();

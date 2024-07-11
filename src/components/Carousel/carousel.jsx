@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import "../../styles/logements.scss"
 import appartements from "../../assets/logements.json";
 import 'react-slideshow-image/dist/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -31,9 +30,9 @@ const Carousel = (props) => {
     const imageCarousel = appart.pictures.map(
       (image, index) => {
         return (
-          <div key={index} className="carousel" >
+          <div key={index} className="carousel" style={{ transition: "opacity 1s ease-in-out" }} >
             <FontAwesomeIcon className="chevronLeft" icon={faChevronLeft} onClick={previousOne}/>
-            <img className="imgCarousel" src={image} alt="Logements"></img>
+            <img className="imgCarousel" src={image} alt="Logements" ></img>
             <FontAwesomeIcon className="chevronRight" icon={faChevronRight} onClick={nextOne}/>
             <span className="numImg"> {index+1}/{length}</span>
           </div>
