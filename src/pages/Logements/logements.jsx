@@ -17,7 +17,6 @@ const Logements = () => {
     }
   );
   const length = appart.length;
- console.log(appart);
   
  useEffect(() =>{
   if(length === 0){
