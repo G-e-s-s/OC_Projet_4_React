@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate, useParams } from "react-router-dom";
 import "./logements.scss";
-import Carousel from '../../components/Carousel/carousel';
+import Slideshow from '../../components/Slideshow/slideshow';
 import Collapse from '../../components/Collapse/collapse';
 import 'react-slideshow-image/dist/styles.css';
 import DetailsLogements from '../../components/DetailsLogements/detailsLogements';
@@ -39,7 +39,7 @@ const Logements = () => {
   return((
     <div>
       <main>
-        <Carousel id={id}></Carousel>
+        <Slideshow id={id}></Slideshow>
         <DetailsLogements id={id}></DetailsLogements>
         <div className="details">
           <Collapse title='Description' description={logement.description}></Collapse>

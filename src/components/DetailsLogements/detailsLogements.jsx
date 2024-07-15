@@ -3,7 +3,7 @@ import appartements from "../../assets/logements.json";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 
-const DetailsLogements = (props) => {
+function DetailsLogements (props) {
     const appart = appartements.filter(
         (appart) => {
           return appart.id === props.id;

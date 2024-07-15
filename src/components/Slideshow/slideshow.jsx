@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 import appartements from "../../assets/logements.json";
 import 'react-slideshow-image/dist/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight, faChevronLeft} from '@fortawesome/free-solid-svg-icons';
+import {faChevronRight, faChevronLeft} from '@fortawesome/free-solid-svg-icons';
 
-const Carousel = (props) => {
+function Slideshow (props) {
   const [index, setIndex] = useState(0);
   const appart = appartements.filter(
     (appart) => {
@@ -22,19 +22,19 @@ const Carousel = (props) => {
   if(length === 1){
     return(
       <div key="0" className="carousel" >
-          <img className="imgCarousel" style={({ marginLeft: '3.5%' })} src={appart.pictures[0]} alt="Logements"></img>
+          <img className="imgCarousel" src={appart.pictures[0]} alt="Logements" style={({ marginLeft: '3.5%' })} ></img>
       </div>
     )
   }
   else {
     const imageCarousel = appart.pictures.map(
-      (image, index) => {
+      (image, indexImage) => {
         return (
-          <div key={index} className="carousel" style={{ transition: "opacity 1s ease-in-out" }} >
+          <div key={indexImage} className="carousel" >
             <FontAwesomeIcon className="chevronLeft" icon={faChevronLeft} onClick={previousOne}/>
             <img className="imgCarousel" src={image} alt="Logements" ></img>
             <FontAwesomeIcon className="chevronRight" icon={faChevronRight} onClick={nextOne}/>
-            <span className="numImg"> {index+1}/{length}</span>
+            <span className="numImg"> {indexImage+1}/{length}</span>
           </div>
         )
       }
@@ -45,4 +45,4 @@ const Carousel = (props) => {
   }
 };
 
-export default Carousel;
+export default Slideshow;
