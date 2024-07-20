@@ -3,7 +3,7 @@ import "../Bannière/banniere.scss"
  
 function Banniere(props) {
   var valeurRetour = null;
-  if(props.text === null){
+  if(props.text === undefined){
     valeurRetour = (
       <div className="banniere">
         <img className={props.className} src={props.img} alt='Paysage'></img>

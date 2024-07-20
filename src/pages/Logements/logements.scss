@@ -7,12 +7,12 @@ $background-color_2: #ff6060;
 
 main {
 	max-width: 1440px;
-	margin: auto;
+	margin: 0 1% 0 1%;
 }
 .details {
 	display: flex;
 	width: 84%;
-	margin-left: 8%;
+	//margin-left: 8%;
 	gap: 4%;
 		ul {
 			margin: 0;
@@ -20,7 +20,7 @@ main {
 			width: 88.5%;
 		}
   .collapsible {
-    width: 88.5%;
+    //width: 88.5%;
     .card-content {
       padding: 20px 18px;
       background-color: $background-color_1;
