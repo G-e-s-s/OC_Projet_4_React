@@ -1,0 +1,25 @@
+.chevronUp{
+    transform: rotate(-180deg);
+    transition: all 0.5s ease-in-out;
+}
+
+.chevronDown{
+    transform: rotate(0deg);
+    transition: all 0.5s ease-in-out;
+}
+
+.card{
+    overflow: hidden;
+}
+
+.hideCard{
+    transform: translateY(-100%);
+    transition: all 0.5s ease-in-out;
+    // transform-origin: 50% 0%;
+}
+
+.showCard{
+    transform: translateY(0%);
+    transition: all 0.5s ease-in-out;
+    // transform-origin: 50% 100%;
+}

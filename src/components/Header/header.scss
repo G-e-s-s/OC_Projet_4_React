@@ -12,7 +12,7 @@ body {
 .navbar {
 	display: flex;
 	justify-content: space-between;
-	margin: 2% 0 3% 18.25%;
+	margin: 2% auto;
 	align-items: center;
 	max-width: 1440px;
 	width: 64%;
@@ -31,16 +31,15 @@ body {
 		font-size: 24px;
 		padding-left: 30px;
 	}
-	li:hover {
-		border-bottom: black 2px solid;
-		width: auto;
-		color: $color_1;
-	}
+}
+.souligne{
+	border-bottom: black 2px solid;
+	width: auto;
+	color: $color_1;
 }
 @media all and (max-width: 1300px) {
 	.navbar {
 		width: 83%;
-		margin: 3% 0 3% 9%;
 	}
 	.btn-nav {
 		a {
@@ -50,10 +49,6 @@ body {
 	}
 }
 @media all and (max-width: 650px) {
-	.navbar {
-		width: 80%;
-		margin: 5% 0 5% 10%;
-	}
 	.navbar__logo {
 		width: 37%;
 	}

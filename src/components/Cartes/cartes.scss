@@ -1,0 +1,63 @@
+$color_1: white;
+$background-color_2: white;
+$background-color_1: rgba(246, 246, 246, 1);
+main {
+	max-width: 1440px;
+	margin: auto;
+}
+.hebergements {
+	background-color: $background-color_1;
+	border-radius: 25px;
+	margin: 0 8%;
+}
+.cartes {
+	display: flex;
+	flex-direction: column-reverse;
+	width: 340px;
+	height: 340px;
+	margin: auto 40px 30px auto;
+}
+.img {
+	position: absolute;
+	width: 340px;
+	height: 340px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+.carte-titre {
+	position: relative;
+	font-size: 18px;
+	font-weight: 700;
+	color: $color_1;
+	padding: 20px;
+	margin: 0;
+}
+
+@media all and (max-width: 1000px) {
+    .hebergements {
+		margin-left: auto;
+	}
+    .groupe-chambres {
+		padding: 0;
+		background-color: $background-color_2;
+		flex-direction: column;
+	}
+	.cartes {
+		width: 87%;
+	}
+	.img {
+		width: 84%;
+		margin-left: 1%;
+		object-fit: cover;
+	}
+}
+@media all and (max-width: 650px) {
+	.hebergements {
+		margin: 20px 8% 0 7.5%;
+	}
+	.img {
+		width: 84%;
+		margin: auto;
+		object-fit: cover;
+	}
+}

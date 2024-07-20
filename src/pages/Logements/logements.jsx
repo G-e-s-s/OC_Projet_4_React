@@ -3,7 +3,6 @@ import { useNavigate, useParams } from "react-router-dom";
 import "./logements.scss";
 import Slideshow from '../../components/Slideshow/slideshow';
 import Collapse from '../../components/Collapse/collapse';
-import 'react-slideshow-image/dist/styles.css';
 import DetailsLogements from '../../components/DetailsLogements/detailsLogements';
 import appartements from "../../assets/logements.json";
 

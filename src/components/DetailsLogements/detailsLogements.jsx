@@ -2,6 +2,7 @@ import React from 'react';
 import appartements from "../../assets/logements.json";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import "../DetailsLogements/detailsLogements.scss"
 
 function DetailsLogements (props) {
     const appart = appartements.filter(

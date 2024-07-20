@@ -1,0 +1,31 @@
+$color_1: white;
+$font-family_1: 'Montserrat';
+
+.banniere {
+	height: 223px;
+	margin: 0 8% 3%;
+}
+
+.textIntro {
+	color: $color_1;
+	text-align: center;
+	padding: 70px 20px;
+	position: relative;
+	bottom: 250px;
+	font-weight: 700;
+	font-size: 48px;
+	font-family: $font-family_1;
+}
+
+@media all and (max-width: 650px) {
+	.banniere {
+		height: 111px;
+		margin-top: 4%;
+	}
+
+	.textIntro {
+		text-align: left;
+		margin: 93px 50px auto auto;
+		font-size: 24px;
+	}
+}

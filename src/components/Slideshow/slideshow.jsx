@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import appartements from "../../assets/logements.json";
-import 'react-slideshow-image/dist/styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faChevronRight, faChevronLeft} from '@fortawesome/free-solid-svg-icons';
+import "../Slideshow/slideshow.scss"
 
 function Slideshow (props) {
   const [index, setIndex] = useState(0);

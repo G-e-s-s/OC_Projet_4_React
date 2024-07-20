@@ -1,21 +1,21 @@
 import React, {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
-import { useCollapse } from 'react-collapsed';
+import '../Collapse/collapse.scss'
  
 function Collapse(props) {
-    const { getCollapseProps, getToggleProps} = useCollapse({duration:500});
-    const [rotateChevron, setRotateChevron] = useState(false);
-    const handleRotate = () => setRotateChevron(!rotateChevron);
-    const rotate = rotateChevron ? "rotate(-180deg)" : "rotate(0)";
-    
+    const [rotate, setRotate] = useState(false);
+    const handleRotate = () => setRotate(!rotate);
+    const classRotate = rotate ? "chevronUp" : "chevronDown";
+    const classCard = rotate ? "showCard card-content" : "hideCard card-content";
+
     return (
       <div className="collapsible" onClick={handleRotate}>
-        <div className="card-header" {...getToggleProps()}>
-          {props.title} <div style={{ transform: rotate, transition: "all 0.5s ease-in-out" }} ><FontAwesomeIcon icon={faChevronUp}/> </div>
+        <div className="card-header">
+          {props.title} <div className={classRotate} ><FontAwesomeIcon icon={faChevronUp}/> </div>
         </div>
-        <div {...getCollapseProps()}>
-          <div className="card-content">
+        <div className='card'>
+          <div className={classCard}>
             {props.description} 
           </div>
         </div>

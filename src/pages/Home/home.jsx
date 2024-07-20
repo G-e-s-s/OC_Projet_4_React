@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div>
       <main>
-        <Banniere className="ImgBanniereHome" img={ImgBanniereHome} text={"Chez vous, parout et ailleurs"}></Banniere>
+        <Banniere className="ImgBanniereHome" img={ImgBanniereHome} text={"Chez vous, partout et ailleurs"}></Banniere>
         <div className="hebergements">
           <section className="groupe-chambres">
             {appartements.map

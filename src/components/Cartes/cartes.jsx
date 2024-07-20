@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Cartes/cartes.scss'
  
 function Cartes(props) {
   return (

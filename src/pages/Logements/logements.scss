@@ -9,50 +9,6 @@ main {
 	max-width: 1440px;
 	margin: auto;
 }
-.react-slideshow-container {
-	margin-left: 8%;
-	width: 84%;
-	object-fit: cover;
-}
-.react-slideshow-wrapper.slide {
-	border-radius: 15px;
-}
-.carousel {
-	display: flex;
-	height: 415px;
-	margin-left: 4.75%;
-}
-.imgCarousel {
-	position: static;
-	width: 100%;
-	max-width: 89%;
-	height: 102.5%;
-	object-fit: cover;
-	border-radius: 25px;
-}
-.imgCarousel:hover {
-	opacity: 1;
-}
-.chevronLeft {
-	position: relative;
-	left: 4%;
-	top: 45%;
-	color: $color_1;
-	height: 17%;
-}
-.chevronRight {
-	position: relative;
-	left: -4%;
-	top: 45%;
-	color: $color_1;
-	height: 17%;
-}
-.numImg {
-	position: relative;
-	right: 47%;
-	top: 90%;
-	color: $color_1;
-}
 .details {
 	display: flex;
 	width: 84%;
@@ -92,112 +48,8 @@ main {
 .card-content li {
   list-style: none;
 }
-.description {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 84%;
-	margin: 2% 0 0 8%;
-}
-.titreLogement {
-	h2 {
-		color: $color_3;
-		font-size: 36px;
-		font-weight: 500;
-		margin: 0 0 5px 0;
-	}
-	p {
-		font-size: 18px;
-		font-weight: 500;
-		margin: 0;
-	}
-}
-.tagLogement {
-	display: flex;
-}
-.tag {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: $background-color_2;
-	border-radius: 10px;
-	font-weight: 700;
-	color: $color_1;
-	margin: 20px 10px 0 0;
-	padding: 5px 10px;
-}
-.Host {
-	display: flex;
-	align-items: flex-end;
-	flex-direction: column;
-}
-.profilHost {
-	display: flex;
-	margin: 10px 0 10px 10px;
-}
-.nameHost {
-	width: 83px;
-	margin-right: 20px;
-	color: $color_3;
-	text-align: right;
-	font-size: 18px;
-	font-weight: 500;
-}
-.imgHost {
-	width: 64px;
-	height: 64px;
-	border-radius: 50px;
-	object-fit: cover;
-}
-.fullStar {
-	color: $color_3;
-	height: 24px;
-	width: 24px;
-	margin-left: 10px;
-}
-.emptyStar {
-	color: $color_4;
-	height: 24px;
-	width: 24px;
-	margin-left: 10px;
-}
 
 @media all and (max-width: 1000px) {
-	.carousel {
-		height: 355px;
-	}
-	.imgCarousel {
-		border-radius: 15px;
-		max-width: 88%;
-	}
-	.chevronRight {
-		left: -6%;
-	}
-	.chevronLeft {
-		left: 6%;
-	}
-	.numImg {
-		right: 50%;
-		bottom: 15%;
-	}
-	.description {
-		flex-direction: column;
-	}
-	.Host {
-		align-items: flex-start;
-		flex-direction: row-reverse;
-		justify-content: space-between;
-	}
-	.profilHost {
-		margin-bottom: 0;
-	}
-	.nameHost {
-		margin-bottom: 0;
-	}
-	.stars {
-		align-self: center;
-		margin-top: 20px;
-	}
 	.details {
 		flex-direction: column;
 		width: 95%;
@@ -207,48 +59,6 @@ main {
 	}
 }
 @media all and (max-width: 650px) {
-	.carousel {
-		height: 255px;
-		margin-left: 3%;
-	}
-	.imgCarousel {
-		border-radius: 10px;
-		height: 255px;
-		width: 100%;
-		max-width: 415px;
-	}
-	.chevronLeft{
-		left: 7%;
-	}
-	.chevronRight {
-		left: -7%;
-	}
-	.numImg {
-		left: -50%;
-		top: 85%;
-	}
-	.titreLogement {
-		h2 {
-			font-size: 18px;
-			margin-left: 1%;
-		}
-		p {
-			font-size: 14px;
-			margin-left: 1%;
-		}
-	}
-	.fullStar {
-		height: 13px;
-		width: 13px;
-	}
-	.emptyStar {
-		height: 13px;
-		width: 13px;
-	}
-	.nameHost {
-		font-size: 12px;
-		margin: 0 10px;
-	}
 	.card-header {
 		font-size: 13px;
 	}
@@ -258,10 +68,5 @@ main {
 				font-size: 12px;
 			}
 		}
-	}
-	.imgHost {
-		width: 32px;
-		height: 32px;
-		object-fit: cover;
 	}
 }
