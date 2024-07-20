@@ -17,6 +17,11 @@ body {
 	max-width: 1440px;
 	width: 64%;
 }
+.btn-nav li a.active {
+	border-bottom: black 2px solid;
+	width: auto;
+	color: $color_1;
+}
 .btn-nav {
 	ul {
 		display: flex;
@@ -29,14 +34,10 @@ body {
 		text-decoration: none;
 		color: $color_1;
 		font-size: 24px;
-		padding-left: 30px;
+		margin-left: 30px;
 	}
 }
-.souligne{
-	border-bottom: black 2px solid;
-	width: auto;
-	color: $color_1;
-}
+
 @media all and (max-width: 1300px) {
 	.navbar {
 		width: 83%;
