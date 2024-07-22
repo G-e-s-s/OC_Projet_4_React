@@ -7,8 +7,8 @@ import appartements from "../../assets/logements.json";
 
 const Home = () => {
   return (
-    <div>
-      <main>
+    <main>
+      <div>
         <Banniere className="ImgBanniereHome" img={ImgBanniereHome} text={"Chez vous, partout et ailleurs"}></Banniere>
         <div className="hebergements">
           <section className="groupe-chambres">
@@ -21,8 +21,8 @@ const Home = () => {
             )}
           </section>
         </div>
-      </main>
-    </div>
+      </div>
+    </main>
   )
 }
 

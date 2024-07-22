@@ -30,12 +30,14 @@ function Slideshow (props) {
     const imageCarousel = appart.pictures.map(
       (image, indexImage) => {
         return (
+        <div className="slideshow">
+          <FontAwesomeIcon className="chevronLeft" icon={faChevronLeft} onClick={previousOne}/>
           <div key={indexImage} className="carousel" >
-            <FontAwesomeIcon className="chevronLeft" icon={faChevronLeft} onClick={previousOne}/>
             <img className="imgCarousel" src={image} alt="Logements" ></img>
-            <FontAwesomeIcon className="chevronRight" icon={faChevronRight} onClick={nextOne}/>
             <span className="numImg"> {indexImage+1}/{length}</span>
           </div>
+          <FontAwesomeIcon className="chevronRight" icon={faChevronRight} onClick={nextOne}/>
+        </div>
         )
       }
     );
