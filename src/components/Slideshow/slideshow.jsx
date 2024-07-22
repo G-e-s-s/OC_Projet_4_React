@@ -21,8 +21,10 @@ function Slideshow (props) {
   }
   if(length === 1){
     return(
-      <div key="0" className="carousel" >
-          <img className="imgCarousel" src={appart.pictures[0]} alt="Logements" style={({ marginLeft: '3.5%' })} ></img>
+      <div className="slideshow">
+        <div key="0" className="carousel" >
+            <img className="imgCarousel" src={appart.pictures[0]} alt="Logements" ></img>
+        </div>
       </div>
     )
   }

@@ -1,7 +1,6 @@
 $color_1: #FF6060;
 $color_2: black;
 
-/* 404 */
 main {
 	max-width: 1440px;
 	margin: auto;
@@ -15,13 +14,13 @@ main {
 	}
 }
 .imgError {
-	padding: 100px 0 100px 0;
+	padding: 10% 0 10% 0;
 }
 .textError {
 	color: $color_1;
 	font-size: 36px;
 	font-weight: 500;
-	padding-bottom: 100px;
+	padding-bottom: 10%;
 }
 .return {
 	font-size: 18px;
@@ -37,7 +36,6 @@ main {
 	}
 	.textError {
 		font-size: 18px;
-		padding: 30px 80px;
 		text-align: center;
 	}
 	.return {
