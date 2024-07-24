@@ -18,15 +18,13 @@
 
 .hideCard{
     position: absolute;
-    opacity: 1;
-    transform: translateY(-100%) scale(0);
+    transform: scale(0);
     animation: animationHideCard;
     animation-duration: 500ms;
 }
 
 .showCard{
     position: relative;
-    opacity: 1;    
     transform: translateY(0%);
     animation: animationShowCard;
     animation-duration: 500ms;
@@ -34,17 +32,14 @@
 
 @keyframes animationHideCard {
     0%{
-        opacity : 1;
         position : relative;
-        transform: translateY(0%) scale(1);
+        transform: translateY(0%);
     }
     99%{
-        opacity : 1;
         position : relative;
-        transform: translateY(-100%) scale(1);
+        transform: translateY(-100%);
     }
     100%{
-        opacity : 0;
         transform: translateY(-100%) scale(0);
     }
 }
